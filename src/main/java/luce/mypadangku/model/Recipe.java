@@ -14,12 +14,12 @@ public class Recipe {
     private String menuName;
     private String recipeName;
     private String description;
-    private List<RecipeIngredient> ingredients = new ArrayList<>();
+    private List<RecipeIngredients> ingredients = new ArrayList<>();
 
     public Recipe() {
     }
 
-    public Recipe(int id, int menuId, String menuName, String recipeName, String description, List<RecipeIngredient> ingredients) {
+    public Recipe(int id, int menuId, String menuName, String recipeName, String description, List<RecipeIngredients> ingredients) {
         this.id = id;
         this.menuId = menuId;
         this.recipeName = recipeName;
@@ -57,5 +57,21 @@ public class Recipe {
 
     public void setRecipeName(String recipeName) {
         this.recipeName = recipeName;
+    }
 
- }
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<RecipeIngredients> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(List<RecipeIngredients> ingredients) {
+        this.ingredients = ingredients;
+    }
+}
