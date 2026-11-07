@@ -22,6 +22,7 @@ public class Recipe {
     public Recipe(int id, int menuId, String menuName, String recipeName, String description, List<RecipeIngredients> ingredients) {
         this.id = id;
         this.menuId = menuId;
+        this.menuName = menuName;
         this.recipeName = recipeName;
         this.description = description;
         this.ingredients = ingredients;
