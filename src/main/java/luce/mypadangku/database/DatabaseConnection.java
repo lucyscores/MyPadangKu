@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public final class DatabaseConnection {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/mypadangku?useSSL=false&serverTimezone=Asia/Jakarta";
+    private static final String URL = "jdbc:mysql://localhost:3306/mypadangku?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Jakarta";
     private static final String USER = "root";
     private static final String PASSWORD = "underscore";
 
